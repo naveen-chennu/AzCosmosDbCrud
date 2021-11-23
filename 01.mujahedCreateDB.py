@@ -9,4 +9,3 @@ try:
     database = client.create_database(database_name)
 except exceptions.CosmosResourceExistsError:
     database = client.get_database_client(database_name)
-print(database_name)
