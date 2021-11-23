@@ -20,3 +20,4 @@ for i in range(1,11):
         "productName":"Watch{0}".format(i),
         "productModel":"Model{0}".format(i)
         })
+print("inserted data")
