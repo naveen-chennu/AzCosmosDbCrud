@@ -13,7 +13,7 @@ try:
     database = client.create_database(database_name)
 except exceptions.CosmosResourceExistsError:
     database = client.get_database_client(database_name)
-
+print(database_name)
 container_name="smhproducts"
 try:
 	container=database.create_container(id=container_name, partition_key=PartitionKey(path="/productName"))
@@ -21,4 +21,4 @@ except exceptions.CosmosResourceExistsError:
 	container=database.get_container_client(container_name)
 except exceptions.CosmosHttpResponseError:
 	raise
-    
+print(container_name)	
