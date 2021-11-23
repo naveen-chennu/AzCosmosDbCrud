@@ -1,8 +1,8 @@
 from azure.cosmos import CosmosClient, exceptions,PartitionKey
 import os
 
-os.environ['ACCOUNT_URI']="https://accna1031.documents.azure.com:443/"
-os.environ['ACCOUNT_KEY']="lY6xRyLRHIEofIHxX9Ut89SadViErPLfQAaqD7H2ljG5PndZ47lMFUEd7vLyLjk5KEsmbpBlStLedN8DcrsGDA=="
+# os.environ['ACCOUNT_URI']="https://accna1031.documents.azure.com:443/"
+# os.environ['ACCOUNT_KEY']="lY6xRyLRHIEofIHxX9Ut89SadViErPLfQAaqD7H2ljG5PndZ47lMFUEd7vLyLjk5KEsmbpBlStLedN8DcrsGDA=="
 
 url = os.environ['ACCOUNT_URI']
 key = os.environ['ACCOUNT_KEY']
